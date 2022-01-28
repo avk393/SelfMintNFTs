@@ -17,7 +17,7 @@ module.exports = async function(callback) {
     try {
         // Fetch the deployed token
         const privateKey = privateKeys.split(',')[0]
-        const web3 = new Web3(new Web3.providers.HttpProvider('https://rinkeby.infura.io/v3/c0db89d71d424038bc96c4a04e390e9b'))
+        const web3 = new Web3(new Web3.providers.HttpProvider(`https://rinkeby.infura.io/v3/${process.env.INFURA_API_KEY}`))
         const manualNftMint = await new web3.eth.Contract(ManualNftMint.abi, ManualNftMint.networks[4].address)
 
         // Mint the NFT
