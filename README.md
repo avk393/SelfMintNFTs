@@ -14,6 +14,6 @@ to mint your own NFT.
 7. Create an account on Pinata if you don't already have one and upload NFT along with your metadata file. Here is an example of a metadata file that
    will link back to your NFT picture in the "image" field. https://gateway.pinata.cloud/ipfs/Qmf91MvotZgb2MeNtQiRgjiDSCZ8hPLbDxxk1WWBfE1jqZ.
 8. Now replace the recipientAddress and the URI variable in line 38 with your intended destination address and NFT metadata URL from Pinata.
-9. Run "truffle exec scripts/mint-nft.js --network [desired network] and watch your NFT get minted!
+9. Run "truffle migrate --network [desired network]", then "truffle exec scripts/mint-nft.js --network [desired network] and watch your NFT get minted!
 
 For more detailed steps of how to setup a Pinata account, Infura API key, and truffle framework, please reference: https://medium.com/gft-engineering/creating-your-own-nft-from-scratch-and-listing-it-on-opensea-8ac296cf1019. 
